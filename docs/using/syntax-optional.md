@@ -13,7 +13,7 @@ Their goal is generally to add more *Markdown friendly* syntaxes; often enabling
 A special syntax for admonitions can optionally be enabled by setting `myst_admonition_enable = True` in the sphinx `conf.py` [configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html).
 
 The key differences are that, instead of back-ticks, colons are used, and **the content starts as regular Markdown**.
-This has the benefit of allowing the content to be rendered correctly, when you are working in any standard Markdown editor.
+This has the benefit of allowing the content to be rendered correctly//, when you are working in any standard Markdown editor.
 For example:
 
 ```md
@@ -62,7 +62,7 @@ This text is **standard** _Markdown_
 ## Auto-generated header anchors
 
 A common, extended Markdown syntax is to use header bookmark links, locally; `[](#header-anchor)`, or cross-file `[](path/to/file.md#header-anchor)`.
-To achieve this, section headings must be assigned anchors, which can be achieved in `myst-paser`,
+To achieve this, section headings must be assigned anchors, which can be achieved in `myst-parser`,
 by setting `myst_heading_anchors = 2` in your `conf.py`.
 This configures heading anchors to be assigned to both `h1` and `h2` level headings.
 The anchor "slugs" created aim to follow the [GitHub implementation](https://github.com/Flet/github-slugger); lower-case text, removing punctuation, replacing spaces with `-`, uniqueness *via* suffix enumeration `-1`.
